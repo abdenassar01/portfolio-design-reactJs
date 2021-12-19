@@ -4,7 +4,7 @@ export const GlobalStyle = createGlobalStyle`
     
     html{
         font-size: 16px;
-        box-sizing: border-box;
+        font-family: 'Roboto Mono', monospace;
     }
 
     *, body{
@@ -12,6 +12,5 @@ export const GlobalStyle = createGlobalStyle`
         padding: 0;
         box-sizing: border-box;
         border: none;
-        font-family: "jetBraines Mono" , monospace;
     }
 `

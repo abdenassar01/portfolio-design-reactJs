@@ -5,7 +5,7 @@ const Button = styled.button`
     padding: 10px 60px;
     border: none;
     border-radius: 50px;
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'jetBraines Mono', monospace;
     font-weight: bold;
     margin: 20px
 `;

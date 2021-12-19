@@ -2,13 +2,12 @@ import styled from "styled-components"
 import { textColors } from "../colors/colors";
 
 const header = styled.p`
-    font-family: 'jetBraines Mono', monospace;
     color: ${props => props.color ? props.color : textColors["text"]};
+    font-weight: ${props => props.bold ? "bold" : "100"};
 `;
 
 export const H1 = styled(header)`
-    font-size: 2rem;
-    font-weight: bold;
+    font-size: ${props => props.large ? " 2.5rem" : "1.8rem"};
 `; 
 
 export const H2 = styled(header)`
