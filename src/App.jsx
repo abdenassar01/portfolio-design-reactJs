@@ -10,7 +10,7 @@ const App = () => {
  
     return (
         <Wrapper>
-            <SideBar />
+            <SideBar/>
             <Routes>
                 <Route path="/" element={<Home />}/>
                 <Route path="/about" element={<About />}/>

@@ -1,9 +1,9 @@
 export const primaryColors = {
-    100: '#01AAFD',
-    200: '#3E8E7A',
-    300: '#4333A3',
-    400: '#C7FCEB',
-    500: '#E54461',
+    100: '#3510DB',
+    200: '#005FFF',
+    300: '#0086FF',
+    400: '#FF006F',
+    500: '#00D0A3',
 }
 
 export const buttonStatus = {

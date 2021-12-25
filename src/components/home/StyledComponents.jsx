@@ -8,11 +8,11 @@ export const Illistration = styled.img`
 
 export const HomeWrapper = styled.div`
    width: 85%;
-   overflow: scroll;
+   margin-left: 15%;
 `
 
 export const ParagraphWrapper = styled.div`
-   font-family: 'Lobster', cursive;
+   font-family: 'Pushster', cursive;
 `
 
 export const Span = styled.span`
@@ -27,11 +27,23 @@ export const ItemWrapper =  styled.div`
     position: relative;
 `
 
+export const IdeTopBar = styled.div`
+    height: 40px;
+    position: fixed;
+    top: 0;
+    width: 85%;
+    color: ${neutral[200]};
+    background-color:  ${neutral[600]};
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+`
+
 export const IdeBanner = styled.div`
     height: 20px;
     position: fixed;
     bottom: 0;
-    width: 100%;
+    width: 85%;
     color: ${neutral[200]};
     background-color:  ${neutral[600]};
     display: flex;
@@ -47,7 +59,7 @@ export const Right = styled.div`
 export const Left = styled.div`
     display: flex;
     justify-content: space-between;
-    margin-right: 200px
+    margin-right: 10px;
 `
 
 export const Icon = styled.img`

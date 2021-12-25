@@ -36,4 +36,5 @@ export const HelperText = styled(header)`
 
 export const CopyrightText = styled(header)`
     font-size: 0.7rem;
+    text-align: center;
 `;

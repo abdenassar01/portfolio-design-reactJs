@@ -6,7 +6,7 @@ import { PrimaryButton, SecondaryButton } from '../../utils'
 import { 
     Illistration,  HomeWrapper, Span, 
     ParagraphWrapper, ItemWrapper , IdeBanner ,
-    Right, Left, Icon
+    Right, Left, Icon, IdeTopBar
     } from './StyledComponents';
 
 import { H1, Paragraph } from '../../utils'
@@ -14,6 +14,9 @@ import { H1, Paragraph } from '../../utils'
 const Home = () => {
     return (
         <HomeWrapper>
+            <IdeTopBar>
+                hello Bitches
+            </IdeTopBar>
             <ItemWrapper>
                 <ParagraphWrapper>
                     <H1 bold large>Hello, World!</H1>   
@@ -30,7 +33,11 @@ const Home = () => {
                     <Paragraph color="#696969">master</Paragraph>
                 </Right>
                 <Left>
-                    <Paragraph color="#bdb9b9">Ln25,Col58 &nbsp;</Paragraph>
+                    <Paragraph 
+                        color="#bdb9b9"
+                    >
+                            Ln25,Col58 &nbsp;
+                    </Paragraph>
                     <Paragraph color="#bdb9b9">Spaces:4 &nbsp;</Paragraph>
                     <Paragraph color="#bdb9b9">UTF-8 &nbsp;</Paragraph>
                     <Paragraph color="#bdb9b9">Prettier &nbsp;</Paragraph>

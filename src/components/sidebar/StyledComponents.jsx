@@ -11,8 +11,7 @@ export const SideBarWrapper = styled.div`
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
-    overflow: hidden;
-    position: relative;
+    position: fixed;
 `
 
 export const Profile = styled.div`
@@ -36,15 +35,25 @@ export const LinksWrapper = styled.div`
     right: 0;
 ` 
 
-export const RouterLink = styled(Link)`
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 10px 30px;
+export const LinkWrapper = styled.div`
+    font-weight: 900;
     border-radius: 20px 0 0 20px;
+    padding: 10px 30px;
     
-    &:hover{ 
-        color: ${primaryColors[100]};
+
+    &:hover{
         background-color: white;
     }
 `
+
+export const RouterLink = styled(Link)`
+    text-decoration: none;
+    color: "#ffffff";
+    padding: 0px 5px;
+
+`;
+
+export const Icon = styled.img`
+    width: 20px;
+`
+
