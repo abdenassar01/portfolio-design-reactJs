@@ -1,13 +1,14 @@
 import styled from "styled-components";
 import { primaryColors , buttonStatus, statusColors} from "../colors/colors"
 
-const Button = styled.button`
-    padding: 10px 60px;
+const Button = styled.a`
+    padding: 7px 42px;
+    text-decoration: none;
     border: none;
     border-radius: 50px;
     font-family: 'jetBraines Mono', monospace;
     font-weight: bold;
-    margin: 20px
+    cursor: pointer;
 `;
 
 const MainButton = styled(Button)`
@@ -22,6 +23,14 @@ export const PrimaryButton = styled(MainButton)`
         background-color: transparent;
         color: ${primaryColors[100]}
     }
+
+    &:focus{
+        color: ${buttonStatus.focus};
+    }
+
+    &:disabled{
+        color: ${buttonStatus.disabled};
+    }
 `;
 
 export const SecondaryButton = styled(MainButton)`
@@ -31,6 +40,14 @@ export const SecondaryButton = styled(MainButton)`
     &:hover{
         background-color: ${primaryColors[100]};
         color: white;
+    }
+
+    &:focus{
+        color: ${buttonStatus.focus};
+    }
+
+    &:disabled{
+        color: ${buttonStatus.disabled};
     }
 `
 

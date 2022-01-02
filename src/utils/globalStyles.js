@@ -4,7 +4,7 @@ export const GlobalStyle = createGlobalStyle`
     
     html{
         font-size: 16px;
-        font-family: 'Roboto Mono', monospace;
+        font-family: 'Roboto Mono Bold', monospace;
     }
 
     *, body{
