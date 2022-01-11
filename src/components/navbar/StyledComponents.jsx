@@ -18,7 +18,6 @@ export const StyledLink = styled(Link)`
     text-decoration: none;
     padding: 0 42px;
     height: 100%;
-    border-radius: 10px 10px 0 0;
 
     &:hover{
         border-bottom: 3px solid ${primaryColors[400]};

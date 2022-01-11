@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import { primaryColors , buttonStatus, statusColors} from "../colors/colors"
+import { NavLink } from "react-router-dom";
 
-const Button = styled.a`
+const Button = styled(NavLink)`
     padding: 7px 42px;
     text-decoration: none;
     border: none;

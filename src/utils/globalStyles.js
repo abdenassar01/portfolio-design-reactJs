@@ -13,4 +13,14 @@ export const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
         border: none;
     }
+
+    ::-webkit-scrollbar {
+        width: 5px;
+        height: 8px;
+        background-color:#1DA0B5; 
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background:  #CA5A2F ;
+    }
 `
