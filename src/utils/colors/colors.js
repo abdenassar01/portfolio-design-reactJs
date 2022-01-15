@@ -19,7 +19,7 @@ export const textColors = {
 export const neutral = {
     100: '#ffffff',
     200: '#f4f5f7',
-    300: '#daeceb',
+    300: '#c7c7c7',
     400: '#737581',
     500: '#4a4b53',
     600: '#000000',

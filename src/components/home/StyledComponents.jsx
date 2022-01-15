@@ -23,7 +23,7 @@ export const BtnWrapper = styled.div`
 `
 
 export const Span = styled.span`
-    color: ${ primaryColors[100] };
+    color: ${ props => props.color? props.color : primaryColors[100] };
 `
 
 export const ItemWrapper =  styled.div`

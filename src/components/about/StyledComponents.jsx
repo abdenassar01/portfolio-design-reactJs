@@ -1,19 +1,17 @@
 import styled from "styled-components";
-import { neutral, primaryColors } from '../../utils';
+import { neutral } from '../../utils';
 
 
-export const Wrapper = styled.div`
-    /* height: 200vh; */
-    /* border: 1px solid #ff0000; */
+export const FistPage = styled.div`
     Display: flex;
     justify-content: space-around;
     align-items: center;
-    /* position: relative; */
 `
 
 export const ParagraphWrapper = styled.div`
     background-color: ${ neutral[300] };
-    box-shadow: 0 0px 5px ${ neutral[300]};
+    background-color: #b4b4b4;
+    box-shadow: 1px 0px 5px ${ neutral[300]};
     border-radius: 20px;
     height: 200px;
     width: 500px;
@@ -21,23 +19,32 @@ export const ParagraphWrapper = styled.div`
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 0px 20px;
-    /* position: absolute;
-    top: 150px;
-    left: 200px; */ 
+    padding: 0px 20px;  
 `
  
-// export const Curve = styled.div`
-//     height: 500px;
-//     width: 300px;
-//     background-color: ${ primaryColors[400] };
-//     /* position: absolute;
-//     top: 0;
-//     right: 40px; */
-//     border-radius: 0 0 200px 50px; 
-// `
+export const ReachMe = styled.div`
+    margin-top: 50px;
+    text-align: center;
+`
+
+export const LeftSide = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+`
+
+export const SocialMedia = styled.div`
+    margin-top: 10px;
+`
 
 export const ProfileImg = styled.img`
     height: 500px;
-    border-radius: 0 0 200px 50px; 
+    border-radius: 20px 0 200px 0px; 
+    box-shadow: 1px 0px 5px ${ neutral[300]};
+
+`
+
+export const SecondPage = styled.div`
+
 `
