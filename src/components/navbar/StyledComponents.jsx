@@ -18,10 +18,13 @@ export const StyledLink = styled(Link)`
     text-decoration: none;
     padding: 0 42px;
     height: 100%;
+    border-radius: 50px;
+    transition: all 0.3s ease-in;
 
     &:hover{
-        border-bottom: 3px solid ${primaryColors[400]};
-        background-color: rgba(0, 0, 0, 0.2);
+        /* border-bottom: 3px solid ${primaryColors[200]}; */
+        transform: scale(0.8);
+        background-color: ${primaryColors[200]}
 
     }
 `

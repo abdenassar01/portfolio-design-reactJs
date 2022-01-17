@@ -16,7 +16,7 @@ export const ParagraphWrapper = styled.div`
 
 export const BtnWrapper = styled.div`
     margin-top: 20px;
-    width: 50%;
+    width: 70%;
     display: flex;
     justify-content: space-between;
 

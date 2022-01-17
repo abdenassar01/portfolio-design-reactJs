@@ -1,6 +1,12 @@
-import { HelperText, H3, Icon } from '../../utils';
-import { FistPage, ParagraphWrapper , ReachMe, LeftSide, SecondPage, ProfileImg, SocialMedia} from './StyledComponents'
+import { HelperText, H3, H1, Paragraph, primaryColors } from '../../utils';
+import {    
+    FistPage, ParagraphWrapper , 
+    ReachMe, LeftSide, SecondPage, LinkIcon,
+    ProfileImg, SocialMedia, ServecesWrapper, ScrollArrow,
+    Items, ServiceCard, ServiceIcon
+        } from './StyledComponents'
 
+import { services }  from './services';
 import facebook from '../../assets/icons/facebook.png';
 import linkedin from '../../assets/icons/linkedin.png';
 import github from '../../assets/icons/github.png';
@@ -19,27 +25,41 @@ const About = () => {
                             Hey, My Name is ABDENASSAR AMIMI, and I'm a 20 years old moroccain web developer.
                             I started my learning juerney Two years a go.
                             I have Learned a lot of stuff during this period. including Web Development (Front-end and back-end)
-                            <br /> No I'm Working with React framework for the front-end and Spring Boot framework for the backend
+                            <br /> No I'm Working with React framework for the front-end and Spring Boot framework for the backend.
                         </HelperText>
                         
                     </ParagraphWrapper>
                     <ReachMe>
-                        <H3 color="#096d9b">You can Reach me at</H3>
+                        <H3 color={primaryColors[100]}>You can Reach me at</H3>
                         <SocialMedia>
-                            <a target="_blank" href="https://www.facebook.com/abdenassar01"><Icon src={facebook} alt="facebook"  margin="10px" width="30px"/></a>
-                            <a target="_blank" href="https://www.linkedin.com/abdenassar01"><Icon src={linkedin} alt="linkedin"  margin="10px" width="30px"/></a>
-                            <a target="_blank" href="https://www.github.com/abdenassar01"><Icon src={github} alt="github"  margin="10px" width="30px"/></a>
-                            <a target="_blank" href="https://www.instagram.com/abdenassar01"><Icon src={instagram} alt="instagram"  margin="10px" width="30px"/></a>
-                            <a target="_blank" href="https://www.dribbble.com/abdenassar01"><Icon src={dribbble} alt="dribbble"  margin="10px" width="30px"/></a>
-                            <a target="_blank" href="https://www.fiverr.com/abdenassar01"><Icon src={fiver} alt="fiverr"  margin="10px" width="30px"/></a>
+                            <a target="_blank" rel="noreferrer" href="https://www.facebook.com/abdenassar01"><LinkIcon src={facebook} alt="facebook"  margin="10px" width="30px"/></a>
+                            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/abdenassar01"><LinkIcon src={linkedin} alt="linkedin"  margin="10px" width="30px"/></a>
+                            <a target="_blank" rel="noreferrer" href="https://www.github.com/abdenassar01"><LinkIcon src={github} alt="github"  margin="10px" width="30px"/></a>
+                            <a target="_blank" rel="noreferrer" href="https://www.instagram.com/abdenassar01"><LinkIcon src={instagram} alt="instagram"  margin="10px" width="30px"/></a>
+                            <a target="_blank" rel="noreferrer" href="https://www.dribbble.com/abdenassar01"><LinkIcon src={dribbble} alt="dribbble"  margin="10px" width="30px"/></a>
+                            <a target="_blank" rel="noreferrer" href="https://www.fiverr.com/abdenassar01"><LinkIcon src={fiver} alt="fiverr"  margin="10px" width="30px"/></a>
                         </SocialMedia>
                     </ReachMe>
                 </LeftSide>
                 <ProfileImg src={profileImage} />
+                <ScrollArrow />
             </FistPage>
             <SecondPage>
-               The SecondPage I well complete it tomorrow
+                <ServecesWrapper>
+                    <H1 color={primaryColors[100]} bold>What I'm Offering</H1>
+                    <Items>
+                        { services.map(service =>
+                                <ServiceCard key={service.id}>
+                                    <ServiceIcon width="50px" src={service.icon} />
+                                    <H3 bold color={primaryColors[100]}>{service.title}</H3><br />
+                                    <Paragraph>{service.text}</Paragraph>
+                                </ServiceCard>
+                            )}    
+                    </Items>
+                </ServecesWrapper> 
             </SecondPage>  
+            The ThirdPage I well complete it tomorrow
+
         </>
         
     )

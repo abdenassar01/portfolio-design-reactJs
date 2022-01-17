@@ -4,7 +4,7 @@ export const GlobalStyle = createGlobalStyle`
     
     html{
         font-size: 16px;
-        font-family: 'Roboto Mono Bold', monospace;
+        font-family: 'Roboto Mono Bold', monospace; 
     }
 
     *, body{
@@ -13,7 +13,10 @@ export const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
         border: none;
     }
-
+    ::selection{
+        background-color: #1DA0FF;
+        color: #FFFFFF;
+    }
     ::-webkit-scrollbar {
         width: 5px;
         height: 8px;

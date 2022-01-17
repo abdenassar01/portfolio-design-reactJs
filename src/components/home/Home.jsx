@@ -12,8 +12,8 @@ const Home = () => {
         <HomeWrapper>
             <ItemWrapper>
                 <ParagraphWrapper>
-                    <H1 bold large>Do you have an <Span>idea</Span> in mind<Span>?</Span></H1>
-                    <H1 bold large><Span>l'ets</Span> make it <Span color="#ff4f09">True </Span> </H1>
+                    <H1 bold large>Have an <Span color="#ff4f09">idea</Span> in mind<Span>?</Span></H1>
+                    <H1 bold large><Span>L'ets</Span> make it <Span color="#ff4f09">True </Span> </H1>
                     <BtnWrapper>
                         <PrimaryButton to="/contact" >Hire Me</PrimaryButton>
                         <SecondaryButton to="/about">About Me</SecondaryButton>

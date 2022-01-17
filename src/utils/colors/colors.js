@@ -1,6 +1,6 @@
 export const primaryColors = {
     100: '#1DA0FF',
-    200: '#005FFF',
+    200: '#FF4F09',
     300: '#0086FF',
     400: '#FF006F',
     500: '#00D0A3',
@@ -19,7 +19,7 @@ export const textColors = {
 export const neutral = {
     100: '#ffffff',
     200: '#f4f5f7',
-    300: '#c7c7c7',
+    300: '#EEEEEE',
     400: '#737581',
     500: '#4a4b53',
     600: '#000000',
