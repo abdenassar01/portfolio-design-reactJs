@@ -1,9 +1,9 @@
 export const primaryColors = {
     100: '#1DA0FF',
-    200: '#FF4F09',
+    200: '#EA5E2B',
     300: '#0086FF',
-    400: '#FF006F',
-    500: '#00D0A3',
+    400: '#324865',
+    500: '#3E4756',
 }
 
 export const buttonStatus = {
@@ -18,10 +18,10 @@ export const textColors = {
 
 export const neutral = {
     100: '#ffffff',
-    200: '#f4f5f7',
+    200: '#E6F4F1',
     300: '#EEEEEE',
     400: '#737581',
-    500: '#4a4b53',
+    500: '#f4f5f7',
     600: '#000000',
 }
 

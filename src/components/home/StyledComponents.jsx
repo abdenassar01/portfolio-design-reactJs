@@ -8,10 +8,11 @@ export const Illistration = styled.img`
 
 export const HomeWrapper = styled.div`
    width: 100%;
+   height: 90vh;
 `
 
 export const ParagraphWrapper = styled.div`
-    
+   
 `
 
 export const BtnWrapper = styled.div`

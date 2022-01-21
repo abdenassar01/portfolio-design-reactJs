@@ -3,7 +3,7 @@ import {
     FistPage, ParagraphWrapper , 
     ReachMe, LeftSide, SecondPage, LinkIcon,
     ProfileImg, SocialMedia, ServecesWrapper, ScrollArrow,
-    Items, ServiceCard, ServiceIcon
+    Items, ServiceCard, ServiceIcon, ProfileWrapper
         } from './StyledComponents'
 
 import { services }  from './services';
@@ -13,7 +13,7 @@ import github from '../../assets/icons/github.png';
 import instagram from '../../assets/icons/instagram.png';
 import dribbble from '../../assets/icons/dribbble.png';
 import fiver from '../../assets/icons/fiver.svg';
-import profileImage from '../../assets/imgs/profile.jpg'
+import profileImage from '../../assets/imgs/profile.png'
 
 const About = () => {
     return (
@@ -41,7 +41,10 @@ const About = () => {
                         </SocialMedia>
                     </ReachMe>
                 </LeftSide>
-                <ProfileImg src={profileImage} />
+                <ProfileWrapper>
+                    <ProfileImg src={profileImage} />
+                </ProfileWrapper>
+                
                 <ScrollArrow />
             </FistPage>
             <SecondPage>

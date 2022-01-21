@@ -2,12 +2,12 @@ import styled from "styled-components";
 import { neutral, primaryColors } from '../../utils';
 
 export const IdeBanner = styled.div`
-    height: 20px;
+    height: 3vh;
     position: fixed;
     bottom: 0;
     width: 100%;
     color: ${neutral[200]};
-    background-color:  ${primaryColors[100]};
+    background-color: ${ props => props.theme.mainColor };
     display: flex;
     justify-content: space-between;
 `

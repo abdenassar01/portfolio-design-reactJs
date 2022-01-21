@@ -1,13 +1,15 @@
 import illistration from '../../assets/illistrations/illistration.png'
 import { PrimaryButton, SecondaryButton, H1} from '../../utils'
 
+import { withTheme } from 'styled-components'
+
 import { 
     Illistration,  HomeWrapper, Span, 
     ParagraphWrapper, ItemWrapper, BtnWrapper
     } from './StyledComponents';
 
 
-const Home = () => {
+const Home = (props) => {
     return (
         <HomeWrapper>
             <ItemWrapper>
@@ -25,4 +27,4 @@ const Home = () => {
     )
 }
 
-export default Home
+export default withTheme(Home)

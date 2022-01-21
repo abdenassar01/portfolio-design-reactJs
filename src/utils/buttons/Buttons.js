@@ -10,19 +10,21 @@ const Button = styled(NavLink)`
     font-family: 'jetBraines Mono', monospace;
     font-weight: bold;
     cursor: pointer;
+    transform: all .3s ease-in-out;
+
 `;
 
 const MainButton = styled(Button)`
-    border: 1px solid ${primaryColors[100]};
+    border: 1px solid ${primaryColors[200]};
 `;
 
 export const PrimaryButton = styled(MainButton)`
-    background-color: ${primaryColors[100]};
+    background-color: ${primaryColors[200]};
     color: white;
 
     &:hover{
         background-color: transparent;
-        color: ${primaryColors[100]}
+        color: ${primaryColors[200]}
     }
 
     &:focus{
@@ -36,10 +38,10 @@ export const PrimaryButton = styled(MainButton)`
 
 export const SecondaryButton = styled(MainButton)`
     background-color: transparent;
-    color: ${primaryColors[100]};
+    color: ${primaryColors[200]};
 
     &:hover{
-        background-color: ${primaryColors[100]};
+        background-color: ${primaryColors[200]};
         color: white;
     }
 
@@ -55,7 +57,7 @@ export const SecondaryButton = styled(MainButton)`
 export const TertiaryButton = styled(MainButton)` 
     border: none;
     background-color: transparent;
-    color: ${primaryColors[100]};
+    color: ${primaryColors[200]};
 
     &:hover{
         color: ${primaryColors[200]};

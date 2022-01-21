@@ -1,14 +1,16 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { primaryColors, neutral } from '../../utils';
+import { dark, light } from '../../utils'
 
 export const Wrapper = styled.div`
-    background-color:  ${primaryColors[100]};
-    height : 40px;
+    background-color:  ${ props => props.theme.mainColor };
+    height : 7vh;
     color: ${neutral[100]};
     display: flex;
     justify-content: start;
     align-items: center;
+    position: relative;
 `
 
 export const StyledLink = styled(Link)`
@@ -22,9 +24,24 @@ export const StyledLink = styled(Link)`
     transition: all 0.3s ease-in;
 
     &:hover{
-        /* border-bottom: 3px solid ${primaryColors[200]}; */
         transform: scale(0.8);
-        background-color: ${primaryColors[200]}
+        background-color: ${ primaryColors[200] }
 
     }
+`
+
+export const ToggleModes = styled.div`
+    width: 60px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: ${ primaryColors[200] };
+    position: absolute;
+    right: 20px ;
+`
+
+export const Toggle = styled.button`
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    background-color:yellow;
 `

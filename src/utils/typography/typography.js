@@ -2,7 +2,7 @@ import styled from "styled-components"
 import { textColors } from "../colors/colors";
 
 const header = styled.p`
-    color: ${props => props.color ? props.color : textColors["text"]};
+    color: ${props => props.theme.fontColor };
     font-weight: ${props => props.bold ? "bold" : "100"};
 `;
 

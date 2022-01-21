@@ -1,4 +1,6 @@
-import { Wrapper, StyledLink } from './StyledComponents';
+import { withTheme } from 'styled-components'
+
+import { Wrapper, StyledLink , ToggleModes, Toggle} from './StyledComponents';
 import { Icon, Paragraph, neutral } from '../../utils';
 import home from '../../assets/icons/home.png';
 import about from '../../assets/icons/about.png';
@@ -6,7 +8,8 @@ import contact from '../../assets/icons/contact.png';
 import projects from '../../assets/icons/projects.png';
 
 
-const Navbar = () => {
+const Navbar = (props) => {
+
     return (
         <Wrapper>
             <StyledLink to="/">
@@ -25,8 +28,11 @@ const Navbar = () => {
                 <Icon width="15px" src={contact} alt="react" margin="10px"/>
                 <Paragraph color={neutral[100]} bold>ContactUs</Paragraph>
             </StyledLink>
+            <ToggleModes>
+                <Toggle onClick={ props.onToggle } />
+            </ToggleModes>
         </Wrapper>
     )
 }
 
-export default Navbar
+export default withTheme(Navbar);

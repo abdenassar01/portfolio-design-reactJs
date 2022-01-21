@@ -10,8 +10,7 @@ export const FistPage = styled.div`
 `
 
 export const ParagraphWrapper = styled.div`
-    background-color: ${ neutral[300] };
-    box-shadow: 1px 0px 5px ${ neutral[300]};
+    background-color: ${ props => props.theme.cardColor };
     border-radius: 20px;
     height: 200px;
     width: 500px;
@@ -20,6 +19,8 @@ export const ParagraphWrapper = styled.div`
     align-items: center;
     text-align: center;
     padding: 0px 20px;  
+    box-shadow:  20px 20px 60px ${ props => props.theme.shadow },
+                -20px -20px 60px ${ props => props.theme.shadow };
 `
  
 export const ReachMe = styled.div`
@@ -44,14 +45,23 @@ export const LinkIcon = styled(Icon)`
     
     &:hover{
         transform: scale(1.3);
-        border: 2px solid ${primaryColors[100]};
+        border: 2px solid ${primaryColors[200]};
     }
+`
+
+
+export const ProfileWrapper = styled.div`
+    height: 500px;
+    width: fit-content;
+    border-radius: 0px 0 200px 0px;
+    background-color: ${ props => props.theme.cardColor };
 `
 
 export const ProfileImg = styled.img`
     height: 500px;
-    border-radius: 20px 0 200px 0px; 
-    box-shadow: 1px 0px 5px ${ neutral[300]};
+    border-radius: 0px 0 200px 0px;
+    box-shadow:  20px 20px 60px ${ props => props.theme.shadow },
+                0px 0px 0px ${ props => props.theme.shadow }; 
 `
 export const ScrollArrow = styled.div`
     width: 5px;
@@ -98,7 +108,6 @@ export const ServecesWrapper = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-     /* border: 1px solid #d8d8d8;  */
 `
 
 export const Items = styled.ul`
@@ -114,8 +123,9 @@ export const ServiceCard = styled.li`
     height: 200px;
     border-radius: 10px;
     list-style-type: none;
-    background-color: ${ neutral[300] };
-    box-shadow: 1px 0px 5px ${ neutral[300]};
+    background-color: ${ props => props.theme.cardColor };
+    box-shadow:  20px 20px 60px ${ props => props.theme.shadow },
+                -20px -20px 60px ${ props => props.theme.shadow };
 
     text-align: center;
     display:flex;
