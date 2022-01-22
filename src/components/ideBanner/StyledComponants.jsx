@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { neutral, primaryColors } from '../../utils';
+import { neutral } from '../../utils';
 
 export const IdeBanner = styled.div`
     height: 3vh;

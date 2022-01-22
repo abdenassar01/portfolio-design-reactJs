@@ -1,5 +1,4 @@
 import styled from "styled-components"
-import { textColors } from "../colors/colors";
 
 const header = styled.p`
     color: ${props => props.theme.fontColor };
