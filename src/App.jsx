@@ -13,7 +13,7 @@ import { useState } from 'react';
     
 const App = () => {
  
-    const [ theme, setTheme ] = useState("Light")
+    const [ theme, setTheme ] = useState("light")
 
     const ToggleTheme = () => {
         theme === "light" ? setTheme("dark") : setTheme("light");

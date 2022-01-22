@@ -3,17 +3,18 @@ import {
     FistPage, ParagraphWrapper , 
     ReachMe, LeftSide, SecondPage, LinkIcon,
     ProfileImg, SocialMedia, ServecesWrapper, ScrollArrow,
-    Items, ServiceCard, ServiceIcon, ProfileWrapper
-        } from './StyledComponents'
+    Items, ServiceCard, ServiceIcon, ProfileWrapper, ScrollArrowWrapper,
+        } from './StyledComponents';
 
 import { services }  from './services';
+
 import facebook from '../../assets/icons/facebook.png';
 import linkedin from '../../assets/icons/linkedin.png';
 import github from '../../assets/icons/github.png';
 import instagram from '../../assets/icons/instagram.png';
 import dribbble from '../../assets/icons/dribbble.png';
 import fiver from '../../assets/icons/fiver.svg';
-import profileImage from '../../assets/imgs/profile.png'
+import profileImage from '../../assets/imgs/profile.png';
 
 const About = () => {
     return (
@@ -22,12 +23,11 @@ const About = () => {
                 <LeftSide>
                     <ParagraphWrapper>
                         <HelperText>
-                            Hey, My Name is ABDENASSAR AMIMI, and I'm a 20 years old moroccain web developer.
-                            I started my learning juerney Two years a go.
-                            I have Learned a lot of stuff during this period. including Web Development (Front-end and back-end)
-                            <br /> No I'm Working with React framework for the front-end and Spring Boot framework for the backend.
-                        </HelperText>
-                        
+                            Hey, My Name is ABDENASSAR AMIMI 🙎, and I'm a 20 years old moroccain web developer💻.
+                            I started my learning juerney Two years a go ⏳.
+                            I have Learned a lot of stuff during this period. <br/>including Web Development(Front-end 🎨 and back-end 🗃)
+                            <br /> Now I'm Working with React framework ⚛ for the front-end and Spring Boot framework for the backend 🥬.
+                        </HelperText> 
                     </ParagraphWrapper>
                     <ReachMe>
                         <H3 color={primaryColors[100]}>You can Reach me at</H3>
@@ -44,8 +44,13 @@ const About = () => {
                 <ProfileWrapper>
                     <ProfileImg src={profileImage} />
                 </ProfileWrapper>
-                
-                <ScrollArrow />
+                <ScrollArrowWrapper 
+                    onClick={ 
+                        () =>{
+                            window.scrollTo(0,600)
+                        }}>
+                      <ScrollArrow />
+                </ScrollArrowWrapper>
             </FistPage>
             <SecondPage>
                 <ServecesWrapper>
@@ -62,8 +67,7 @@ const About = () => {
                 </ServecesWrapper> 
             </SecondPage>  
             The ThirdPage I well complete it tomorrow
-
-        </>
+      </>
         
     )
 }

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { neutral, Icon, primaryColors } from '../../utils';
+import { Icon, primaryColors } from '../../utils';
 
 
 export const FistPage = styled.div`
@@ -55,6 +55,8 @@ export const ProfileWrapper = styled.div`
     width: fit-content;
     border-radius: 0px 0 200px 0px;
     background-color: ${ props => props.theme.cardColor };
+
+    
 `
 
 export const ProfileImg = styled.img`
@@ -63,26 +65,16 @@ export const ProfileImg = styled.img`
     box-shadow:  20px 20px 60px ${ props => props.theme.shadow },
                 0px 0px 0px ${ props => props.theme.shadow }; 
 `
-export const ScrollArrow = styled.div`
-    width: 5px;
-    height: 15px;
-    background-color: ${ primaryColors[100] };
+
+export const ScrollArrowWrapper = styled.div` 
+    width: 200px;
+    height: 100px;
     position: absolute;
-    bottom: -40px;
-    transform: rotate(-50deg);
-    animation: bounce 1.5s infinite; 
-
-    &::after{
-        content: "";
-        width: 5px;
-        height: 15px;
-        transform: rotate(95deg);  
-        background-color: ${ primaryColors[100] };
-        position: absolute;
-        bottom: -5px;  
-        left: 5px;
-    }
-
+    bottom: 0px;
+    display: grid;
+    place-items: center;
+    animation: bounce 1.5s infinite;
+    
     @keyframes bounce {
        from{
         bottom: -50px; 
@@ -97,6 +89,26 @@ export const ScrollArrow = styled.div`
         bottom: -20px; 
        }
     }
+`
+export const ScrollArrow = styled.div`
+    width: 5px;
+    height: 15px;
+    background-color: ${ primaryColors[100] };
+    transform: rotate(-50deg);
+    
+
+    &::after{
+        content: "";
+        width: 5px;
+        height: 15px;
+        transform: rotate(95deg);  
+        background-color: ${ primaryColors[100] };
+        position: absolute;
+        bottom: -5px;  
+        left: 5px;
+    }
+
+    
 ` 
 export const SecondPage = styled.div`
     padding-top: 100px;
@@ -116,6 +128,7 @@ export const Items = styled.ul`
     justify-content: space-evenly;
     padding-top: 50px;
     padding-bottom: 50px;
+    flex-wrap: wrap;
 `
 
 export const ServiceCard = styled.li`

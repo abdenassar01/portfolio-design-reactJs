@@ -23,12 +23,13 @@ export const GlobalStyle = createGlobalStyle`
         color: #FFFFFF;
     }
     ::-webkit-scrollbar {
-        width: 5px;
+        width: 2px;
         height: 8px;
-        background-color:#1DA0FF; 
+        background-color: ${props => props.theme.backColor }; 
     }
 
     ::-webkit-scrollbar-thumb {
         background:  #EA5E2B ;
+        border-radius: 50px;
     }
 `

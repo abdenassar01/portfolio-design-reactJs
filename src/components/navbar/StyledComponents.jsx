@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import { primaryColors, neutral } from '../../utils';
-import { dark, light } from '../../utils'
+import { primaryColors, neutral, dark } from '../../utils';
 
 export const Wrapper = styled.div`
     background-color:  ${ props => props.theme.mainColor };
@@ -43,5 +42,9 @@ export const Toggle = styled.button`
     width: 30px;
     height: 30px;
     border-radius: 50px;
-    background-color:yellow;
+    border: 1px solid white;
+    background-color: ${ props => props.theme.mainColor };
+    margin-left: ${ props => props.theme === dark ? "30px" : "0px" }; 
+    transition: all 0.3s ease-in-out;
+
 `
