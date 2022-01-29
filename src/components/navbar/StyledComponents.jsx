@@ -33,7 +33,7 @@ export const ToggleModes = styled.div`
     width: 60px;
     height: 30px;
     border-radius: 50px;
-    background-color: ${ primaryColors[200] };
+    background-color: ${ props => props.theme.shadow };
     position: absolute;
     right: 20px ;
 `
@@ -42,9 +42,9 @@ export const Toggle = styled.button`
     width: 30px;
     height: 30px;
     border-radius: 50px;
-    border: 1px solid white;
-    background-color: ${ props => props.theme.mainColor };
-    margin-left: ${ props => props.theme === dark ? "30px" : "0px" }; 
+    /* border: 1px solid white; */
+    background-color: ${ props => props.theme.cardColor };
+    margin-left: ${ props => props.theme === dark ? "31px" : "-1px" }; 
     transition: all 0.3s ease-in-out;
 
 `
