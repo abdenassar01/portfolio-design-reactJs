@@ -4,6 +4,7 @@ import { primaryColors } from "../../utils";
 export const Illistration = styled.img`
     width: 500px;
     padding-top: 50px;
+    filter: drop-shadow(5px 5px 50px ${ props => props.theme.shadow });
 `
 
 export const HomeWrapper = styled.div`

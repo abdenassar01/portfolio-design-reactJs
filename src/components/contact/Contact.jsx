@@ -1,8 +1,48 @@
+import { Modal, Wrapper,Item, Form, Input, Label, Textarea  } from "./StyledComponants";
+import { SecondaryButton, primaryColors } from "../../utils";
+import { useState } from "react";
+
+
 const Contact = () => {
+
+   const [name, setName] = useState("");   
+   const [email, setEmail] = useState("");
+   const [phone, setPhone] = useState("");
+   const [msg, setMsg] = useState("");
+
+   const handleNameChange = (event) => {setName(event.target.value); console.log(event.target.value);}
+   const handleEmailChange = (event) => {setEmail(event.target.value)}
+   const handlePhoneChange = (event) => {setPhone(event.target.value)}
+   const handleMsgChange = (event) => {setMsg(event.target.value)}
+   const handleFormSubmit = (e) => {
+       e.preventDefault();
+        alert("Hey => " + name);
+   }
+
     return (
-        <div>
-            Contact Us Page
-        </div>
+        <Modal>
+           <Wrapper>
+               <Form action="#">
+                   <Item>
+                        <Label for="name">Name: </Label>
+                        <Input type="text" id="name" placeholder="Name?" value={name} onChange={handleNameChange} />
+                   </Item>    
+                    <Item>
+                        <Label for="Email">Email: </Label>
+                        <Input type="text" id="Email" placeholder="Email?" value={email} onChange={handleEmailChange} />
+                    </Item>    
+                    <Item>
+                        <Label for="Phone">Phone: </Label>
+                        <Input type="number" id="Phone" placeholder="Phone(optional)?" value={phone} onChange={handlePhoneChange} />
+                   </Item>  
+                   <Item>
+                        <Label for="Phone">Message: </Label>
+                        <Textarea  placeholder="Message..."  id="msg" value={msg} onChange={handleMsgChange} />
+                   </Item>     
+                    <SecondaryButton color={primaryColors[100]} onClick={handleFormSubmit} >Send Email</SecondaryButton>    
+                </Form>
+           </Wrapper>
+        </Modal>
     )
 }
 

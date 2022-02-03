@@ -1,6 +1,6 @@
 import { H4 } from '../../utils';
 import { projects } from './projects';
-import { ProjectsList, ProjectCard, Image, Text , BiTextg, Button} from './StyledComponants'
+import { ProjectsList, ProjectCard, Image, Text , BiTextg,Btns, Button} from './StyledComponants'
 
 const Projects = () => {
     return (
@@ -13,8 +13,11 @@ const Projects = () => {
                         <Text>
                             <H4 bold>{project.name}</H4>
                             <br/> {project.disc}
-                            <Button href="">github</Button>   
                         </Text>
+                        <Btns>
+                            <Button href={project.code}>Code</Button>   
+                            <Button href={project.demo}>Demo</Button> 
+                        </Btns>
                     </ProjectCard>)}
             </ProjectsList>
         </>

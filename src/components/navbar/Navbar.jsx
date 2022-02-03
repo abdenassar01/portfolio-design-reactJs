@@ -2,7 +2,7 @@ import { withTheme } from 'styled-components'
 
 import { Wrapper, StyledLink , ToggleModes, Toggle} from './StyledComponents';
 import { Icon, Paragraph } from '../../utils';
-import react from '../../assets/icons/react.png';
+import sun from '../../assets/icons/sun.png';
 // import home from '../../assets/icons/home.png';
 // import about from '../../assets/icons/about.png';
 // import contact from '../../assets/icons/contact.png';
@@ -31,7 +31,7 @@ const Navbar = (props) => {
             </StyledLink>
             <ToggleModes>
                 <Toggle onClick={ props.onToggle } >
-                    <Icon width="20px" src={react} alt="react" />    
+                    {props.theme.shadow === "#cdcdcd" && <Icon width="20px" src={sun} alt="react"/> }         
                 </Toggle>
             </ToggleModes>
         </Wrapper>

@@ -2,20 +2,21 @@ import { primaryColors, neutral} from './colors/colors'
 
 
 export const dark = {
-    mainColor: primaryColors[500],
-    fontColor: neutral[200], 
-    backColor: "#141B29",
-    cardColor: primaryColors[400],
-    shadow: "#192127",
+    mainColor: "#07080F",
+    fontColor: "#CDCDD8", 
+    backColor: "#07080F",
+    cardColor: "#01020B",
+    shadow: "#0f0f15",
+    
 }
 
 export const light = {
     mainColor: primaryColors[100],
     fontColor: neutral[600],
     backColor: neutral[200], 
-    cardColor: neutral[200], 
-    shadow:  "#c4cfcd",
+    cardColor: primaryColors[100], 
+    shadow:   "#cdcdcd",
+    // shadow:   "#BFBFBF",
 }
 
-    //     backColor: primaryColors[500],
 

@@ -42,9 +42,7 @@ export const Toggle = styled.button`
     width: 30px;
     height: 30px;
     border-radius: 50px;
-    /* border: 1px solid white; */
-    background-color: ${ props => props.theme.cardColor };
+    background-color: ${ props => props.theme === dark ? "#20233d" : "white" };
     margin-left: ${ props => props.theme === dark ? "31px" : "-1px" }; 
     transition: all 0.3s ease-in-out;
-
 `

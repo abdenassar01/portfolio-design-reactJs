@@ -14,8 +14,8 @@ const Home = (props) => {
         <HomeWrapper>
             <ItemWrapper>
                 <ParagraphWrapper>
-                    <H1 bold large>Have an <Span color="#ff4f09">idea</Span> in mind<Span>?</Span></H1>
-                    <H1 bold large><Span>L'ets</Span> make it <Span color="#ff4f09">True </Span> </H1>
+                    <H1 bold large>Have an <Span color="#ff4f09">idea</Span> in mind<Span color="#ff4f09">?</Span></H1>
+                    <H1 bold large><Span color="#ff4f09">L'ets</Span> make it <Span color="#ff4f09">True </Span> </H1>
                     <BtnWrapper>
                         <PrimaryButton to="/contact" >Hire Me</PrimaryButton>
                         <SecondaryButton to="/about">About Me</SecondaryButton>
