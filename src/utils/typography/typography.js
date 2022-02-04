@@ -5,6 +5,12 @@ const header = styled.p`
     font-weight: ${props => props.bold ? "bold" : "100"};
 `;
 
+export const Text = styled(header)`
+    font-size: ${props => props.size };
+`; 
+
+
+
 export const H1 = styled(header)`
     font-size: ${props => props.large ? " 2.5rem" : "1.8rem"};
 `; 

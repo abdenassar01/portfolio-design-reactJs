@@ -1,14 +1,10 @@
 import styled from "styled-components";
 import { primaryColors } from "../../utils";
 
-
-
-
 export const Modal = styled.div`
     height: 90vh;
     position: relative;
     display: flex;
-
 `
 
 export const Wrapper = styled.div`
@@ -22,7 +18,8 @@ export const Wrapper = styled.div`
     border-radius: 5px;
     border: 1px solid ${ primaryColors[100] };
     position: absolute;
-    bottom: 10%;
+    bottom: 7%;
+    top: 7%;
     padding: 50px;
     right: 5%;
 `
@@ -31,6 +28,7 @@ export const Form = styled.form`
     display: flex;
     flex-direction: column;
     gap: 20px;
+    object-fit: contain;
 `
 
 export const Item = styled.div`
@@ -38,7 +36,7 @@ export const Item = styled.div`
     padding: 5px;
     border: 1px solid ${ primaryColors[100] };
     border-radius: 5px;
-    background-color: ${ props => props.theme.backColor};
+    background-color: transparent ;
     box-shadow:
         9.9px 11px 1px -11px rgba(0, 0, 0, 0.044),
         27.7px 31px 11.3px -11px rgba(0, 0, 0, 0.066),
@@ -50,6 +48,8 @@ export const Input = styled.input`
     padding: 10px;
     width: 100%;
     border: none;
+    border: 1px solid transparent;
+    color: ${ props => props.theme.fontColor };
     border-radius: 10px;
     background-color: transparent;
     -moz-appearance: textfield;
@@ -68,7 +68,7 @@ export const Input = styled.input`
 export const Textarea = styled.textarea`
     padding: 10px;
     width: 100%;
-    border: none;
+    border: 1px solid transparent;
     background-color: transparent;
     resize: none;
 
@@ -85,5 +85,3 @@ export const Label  = styled.label`
     /* display: none; */
 
 `
-
-

@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { primaryColors , buttonStatus, statusColors} from "../colors/colors"
 import { NavLink } from "react-router-dom";
 
+
 const Button = styled(NavLink)`
     padding: 7px 42px;
     text-decoration: none;
@@ -15,7 +16,6 @@ const Button = styled(NavLink)`
 `;
 
 const MainButton = styled.button`
-    border: 1px solid ${primaryColors[200]};
     padding: 7px 42px;
     text-decoration: none;
     border: none;
@@ -24,18 +24,19 @@ const MainButton = styled.button`
     font-weight: bold;
     cursor: pointer;
     transform: all .3s ease-in-out;
-// `;
+`; 
 // const MainButton = styled(Button)`
 //     border: 1px solid ${primaryColors[200]};
 // `;
 
 export const PrimaryButton = styled(MainButton)`
-    background-color: ${primaryColors[200]};
+    background-color: ${props => props.color? props.color : primaryColors[200]};
+    border: 1px solid ${props => props.color? props.color : primaryColors[200]};
     color: white;
 
     &:hover{
         background-color: transparent;
-        color: ${primaryColors[200]}
+        color:  ${props => props.color? props.color : primaryColors[200]};
     }
 
     &:focus{

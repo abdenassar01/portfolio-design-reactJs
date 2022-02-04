@@ -20,7 +20,8 @@ export const BtnWrapper = styled.div`
     margin-top: 20px;
     width: 70%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 20px;
 
 `
 

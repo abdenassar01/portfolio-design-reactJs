@@ -18,9 +18,9 @@ export const ProjectsList = styled.ul`
 `
 
 export const ProjectCard = styled.li`
-    width: 20%;
-    min-width: 350px;
-    height: 400px;
+    width: 25%;
+    min-width: 370px;
+    height: 420px;
     border-radius: 5px;
     display: flex;
     gap: 30px;
@@ -67,7 +67,7 @@ export const BiTextg = styled.p`
 `
 
 export const Button = styled.a`
-    padding: 5px 30px;
+    padding: 5px 42px;
     text-decoration: none;
     background-color:  white;
     border: 1px solid white;
@@ -75,15 +75,14 @@ export const Button = styled.a`
     font-family: 'jetBraines Mono', monospace;
     font-weight: bold;
     cursor: pointer;
-    transform: all .3s ease-in-out;
     color: ${primaryColors[100]};
+    transition: all .3s ease-in-out;
 
     &:hover{
         background-color: transparent;
         border: 1px solid white;
         color: white;
     }
-
 `
 
 export const Btns = styled.div`   

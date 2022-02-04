@@ -13,7 +13,7 @@ export const projects = [
     {
         id: 2,
         name: 'MDM (My Database Manager)🗃',
-        disc: 'windows form app that manages a personal database, including note, websites, passwords, peaple emails and info. built with vb.net',
+        disc: 'windows form app that manages a personal database, including note, websites, passwords, peaple emails and info.s built with vb.net',
         code: 'github.com',
         demo: '',
         img: nasaflixWeb
@@ -35,5 +35,6 @@ export const projects = [
         demo: '',
         img: nasaflixWeb
     },
+   
 
 ]

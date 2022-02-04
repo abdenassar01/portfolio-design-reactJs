@@ -24,19 +24,19 @@ const Contact = () => {
            <Wrapper>
                <Form action="#">
                    <Item>
-                        <Label for="name">Name: </Label>
+                        <Label >Name: </Label>
                         <Input type="text" id="name" placeholder="Name?" value={name} onChange={handleNameChange} />
                    </Item>    
                     <Item>
-                        <Label for="Email">Email: </Label>
+                        <Label >Email: </Label>
                         <Input type="text" id="Email" placeholder="Email?" value={email} onChange={handleEmailChange} />
                     </Item>    
                     <Item>
-                        <Label for="Phone">Phone: </Label>
+                        <Label >Phone: </Label>
                         <Input type="number" id="Phone" placeholder="Phone(optional)?" value={phone} onChange={handlePhoneChange} />
                    </Item>  
                    <Item>
-                        <Label for="Phone">Message: </Label>
+                        <Label >Message: </Label>
                         <Textarea  placeholder="Message..."  id="msg" value={msg} onChange={handleMsgChange} />
                    </Item>     
                     <SecondaryButton color={primaryColors[100]} onClick={handleFormSubmit} >Send Email</SecondaryButton>    
