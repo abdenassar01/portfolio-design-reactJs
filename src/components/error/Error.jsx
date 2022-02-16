@@ -7,8 +7,8 @@ const Error = () => {
   return (
         <Wrapper>
             <ErrModal>
-                <Text size="2rem" bold color="white">😧Ooops! Something Went Wrong...</Text>
-                <Text size="1rem" color="white"><i>Sorry we can't seem to find the page you're looking for 🚨</i>
+                <Text size="clamp(1.5rem, 50%, 3.5rem)" bold color="white">😧Ooops! Something Went Wrong...</Text>
+                <Text size="clamp(.8rem, 50%, 1rem)" color="white"><i>Sorry we can't seem to find the page you're looking for 🚨</i>
                     <Text size="1rem" bold color="#e1fa00">404</Text>
                 </Text>
                 <Grooper>
@@ -35,9 +35,10 @@ const ErrModal = styled.div`
     flex-direction: column;
     justify-content: center;
     background-color: ${ props => props.theme.mainColor };
+    box-shadow: 5px 5px 100px rgba(0, 0, 0, 0.4);
     font-weight: 900;
     gap: 30px;
-    width: 700px;
+    width: clamp(300px, 50%, 700px );
     padding: 10px;
     border-radius: 10px;
 `

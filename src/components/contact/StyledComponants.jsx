@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { primaryColors } from "../../utils";
+import { SecondaryButton, primaryColors } from "../../utils";
 
 export const Modal = styled.div`
     height: 90vh;
@@ -22,17 +22,18 @@ export const Wrapper = styled.div`
     top: 7%;
     padding: 50px;
     right: 5%;
+    min-height: 85%;
 `
 
 export const Form = styled.form`
     display: flex;
     flex-direction: column;
     gap: 20px;
+    justify-content: center;
     object-fit: contain;
 `
 
 export const Item = styled.div`
-    /* border: 1px solid red; */
     padding: 5px;
     border: 1px solid ${ primaryColors[100] };
     border-radius: 5px;
@@ -71,6 +72,7 @@ export const Textarea = styled.textarea`
     border: 1px solid transparent;
     background-color: transparent;
     resize: none;
+    color: ${ props => props.theme.fontColor };
 
     &:focus{
         outline: none;
@@ -84,4 +86,9 @@ export const Label  = styled.label`
     color: ${primaryColors[100]};
     /* display: none; */
 
+`
+
+export const StyledSecondaryButton = styled(SecondaryButton)`
+
+    margin-bottom: 50px;
 `

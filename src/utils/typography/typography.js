@@ -13,6 +13,10 @@ export const Text = styled(header)`
 
 export const H1 = styled(header)`
     font-size: ${props => props.large ? " 2.5rem" : "1.8rem"};
+
+    @media only screen and (max-width: 600px){
+        font-size: ${props => props.large ? " 1.6rem" : "2.5rem"};
+    }
 `; 
 
 export const H2 = styled(header)`

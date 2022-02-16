@@ -1,5 +1,5 @@
 import { Modal, Wrapper,Item, Form, Input, Label, Textarea  } from "./StyledComponants";
-import { SecondaryButton, primaryColors } from "../../utils";
+import {  primaryColors, SecondaryButton } from "../../utils";
 import { useState } from "react";
 
 
@@ -38,8 +38,12 @@ const Contact = () => {
                    <Item>
                         <Label >Message: </Label>
                         <Textarea  placeholder="Message..."  id="msg" value={msg} onChange={handleMsgChange} />
-                   </Item>     
-                    <SecondaryButton color={primaryColors[100]} onClick={handleFormSubmit} >Send Email</SecondaryButton>    
+                   </Item>  
+                        <SecondaryButton 
+                            color={primaryColors[100]} 
+                            onClick={handleFormSubmit} >
+                            Send Email
+                        </SecondaryButton>     
                 </Form>
            </Wrapper>
         </Modal>

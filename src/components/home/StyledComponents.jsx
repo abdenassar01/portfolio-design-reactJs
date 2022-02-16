@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { primaryColors } from "../../utils";
 
 export const Illistration = styled.img`
-    width: 500px;
+    width: clamp(300px, 50%, 500px);
     padding-top: 50px;
     filter: drop-shadow(5px 5px 50px ${ props => props.theme.shadow });
 `
@@ -13,16 +13,14 @@ export const HomeWrapper = styled.div`
 `
 
 export const ParagraphWrapper = styled.div`
-   
 `
 
 export const BtnWrapper = styled.div`
-    margin-top: 20px;
-    width: 70%;
-    display: flex;
-    justify-content: flex-start;
+    margin-top: 10px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: .7fr  .7fr;
     gap: 20px;
-
 `
 
 export const Span = styled.span`
@@ -35,4 +33,5 @@ export const ItemWrapper =  styled.div`
     flex-wrap: wrap;
     align-items: center;
     position: relative;
+    top: 100px;
 `
