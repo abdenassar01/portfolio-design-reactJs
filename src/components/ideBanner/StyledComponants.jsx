@@ -3,6 +3,7 @@ import { neutral } from '../../utils';
 
 export const IdeBanner = styled.div`
     height: 3vh;
+    padding-top: 5px;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -10,6 +11,10 @@ export const IdeBanner = styled.div`
     background-color: ${ props => props.theme.mainColor };
     display: flex;
     justify-content: space-between;
+
+    @media screen and (max-width: 600px) {
+        display: none;
+    }
 `
 
 export const Right = styled.div`

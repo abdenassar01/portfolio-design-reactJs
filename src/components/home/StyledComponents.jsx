@@ -9,7 +9,10 @@ export const Illistration = styled.img`
 
 export const HomeWrapper = styled.div`
    width: 100%;
-   height: 90vh;
+   display: grid;
+   place-items: center;
+   Padding: 70px 0;
+    overflow: hidden;
 `
 
 export const ParagraphWrapper = styled.div`
@@ -33,5 +36,4 @@ export const ItemWrapper =  styled.div`
     flex-wrap: wrap;
     align-items: center;
     position: relative;
-    top: 100px;
 `

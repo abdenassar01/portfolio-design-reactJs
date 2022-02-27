@@ -66,7 +66,6 @@ const About = () => {
                     </Items>
                 </ServecesWrapper> 
             </SecondPage>  
-            The ThirdPage I well complete it tomorrow
       </>
         
     )

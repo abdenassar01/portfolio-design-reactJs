@@ -115,7 +115,6 @@ export const SecondPage = styled.div`
 `
 
 export const ServecesWrapper = styled.div`
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -125,15 +124,16 @@ export const ServecesWrapper = styled.div`
 export const Items = styled.ul`
     display: flex;
     width: 100%;
+    gap: 20px 5px;
     justify-content: space-evenly;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 100px 0;
     flex-wrap: wrap;
 `
 
 export const ServiceCard = styled.li`
     width: 250px;
     height: 200px;
+    padding: 10px;
     border-radius: 10px;
     list-style-type: none;
     background-color: ${ props => props.theme.cardColor };

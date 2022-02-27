@@ -4,7 +4,7 @@ import { primaryColors, neutral, dark } from '../../utils';
 
 export const Wrapper = styled.div`
     background-color:  ${ props => props.theme.mainColor };
-    height : 7vh;
+    height : 40px;
     color: ${neutral[100]};
     display: flex;
     justify-content: start;
@@ -13,7 +13,7 @@ export const Wrapper = styled.div`
 `
 
 export const StyledLink = styled(Link)`
-    display: flex;
+    display:  ${ props => props.isMobile? "none" : "flex"};
     justify-content: space-between;
     align-items: center;
     text-decoration: none;
