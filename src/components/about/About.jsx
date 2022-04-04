@@ -1,4 +1,4 @@
-import { HelperText, H3, H1, Paragraph, primaryColors } from '../../utils';
+import {  H3, H1, Paragraph, primaryColors } from '../../utils';
 import {    
     FistPage, ParagraphWrapper , 
     ReachMe, LeftSide, SecondPage, LinkIcon,
@@ -22,12 +22,12 @@ const About = () => {
             <FistPage>
                 <LeftSide>
                     <ParagraphWrapper>
-                        <HelperText>
+                        <p>
                             Hey, My Name is ABDENASSAR AMIMI 🙎, and I'm a 20 years old moroccain web developer💻.
                             I started my learning juerney Two years a go ⏳.
                             I have Learned a lot of stuff during this period. <br/>including Web Development(Front-end 🎨 and back-end 🗃)
                             <br /> Now I'm Working with React framework ⚛ for the front-end and Spring Boot framework for the backend 🥬.
-                        </HelperText> 
+                        </p> 
                     </ParagraphWrapper>
                     <ReachMe>
                         <H3 color={primaryColors[100]}>You can Reach me at</H3>

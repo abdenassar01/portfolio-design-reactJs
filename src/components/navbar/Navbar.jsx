@@ -3,12 +3,9 @@ import { withTheme } from 'styled-components'
 import { Wrapper, StyledLink , ToggleModes, Toggle} from './StyledComponents';
 import { Icon, Paragraph } from '../../utils';
 import sun from '../../assets/icons/sun.png';
+import dark from '../../assets/icons/dark.png';
 import { useState } from 'react';
 import { useEffect } from 'react';
-// import home from '../../assets/icons/home.png';
-// import about from '../../assets/icons/about.png';
-// import contact from '../../assets/icons/contact.png';
-// import projects from '../../assets/icons/projects.png';
 
 
 const Navbar = (props) => {
@@ -16,7 +13,7 @@ const Navbar = (props) => {
     const [isMobile, setIsMobile] = useState(false);
 
     useEffect(() => {
-        if(window.innerWidth <= 400){
+        if(window.innerWidth <= 600){
             setIsMobile(true);
         }
     }, [])
@@ -42,7 +39,7 @@ const Navbar = (props) => {
             </StyledLink>
             <ToggleModes>
                 <Toggle onClick={ props.onToggle } >
-                    {props.theme.shadow === "#cdcdcd" && <Icon width="20px" src={sun} alt="react"/> }         
+                    {props.theme.mainColor === "#07080F" ? <Icon width="20px" src={sun} alt="to dark"/> : <Icon width="20px" src={dark} alt="to light"/> }         
                 </Toggle>
             </ToggleModes>
         </Wrapper>

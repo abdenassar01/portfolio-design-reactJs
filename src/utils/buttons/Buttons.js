@@ -4,13 +4,15 @@ import { NavLink } from "react-router-dom";
 
 
 const Button = styled(NavLink)`
-    padding: 7px 42px;
+    padding: 7px 32px;
+    text-align: center;
     text-decoration: none;
     border: none;
     border-radius: 50px;
     font-family: 'jetBraines Mono', monospace;
     font-weight: bold;
     cursor: pointer;
+    box-sizing: border-box;
     transform: all .3s ease-in-out;
 
 `;
@@ -49,6 +51,45 @@ export const PrimaryButton = styled(MainButton)`
 `;
 
 export const SecondaryButton = styled(MainButton)`
+    background-color: transparent;
+    border: 1px solid ${props => props.color? props.color : primaryColors[200]};
+    color: ${props => props.color? props.color : primaryColors[200]};
+
+    &:hover{
+        background-color: ${props => props.color? props.color : primaryColors[200]};
+        color: white;
+    }
+
+    &:focus{
+        color: ${buttonStatus.focus};
+    }
+
+    &:disabled{
+        color: ${buttonStatus.disabled};
+    }
+`
+
+
+export const PrimaryLink = styled(Button)`
+    background-color: ${props => props.color? props.color : primaryColors[200]};
+    border: 1px solid ${props => props.color? props.color : primaryColors[200]};
+    color: white;
+
+    &:hover{
+        background-color: transparent;
+        color:  ${props => props.color? props.color : primaryColors[200]};
+    }
+
+    &:focus{
+        color: ${buttonStatus.focus};
+    }
+
+    &:disabled{
+        color: ${buttonStatus.disabled};
+    }
+`;
+
+export const SecondaryLink = styled(Button)`
     background-color: transparent;
     border: 1px solid ${props => props.color? props.color : primaryColors[200]};
     color: ${props => props.color? props.color : primaryColors[200]};

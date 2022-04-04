@@ -18,11 +18,18 @@ export const ParagraphWrapper = styled.div`
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 0px 20px;  
+    padding: 0px 20px;
     box-shadow:  20px 20px 60px ${ props => props.theme.shadow },
                 -20px -20px 60px ${ props => props.theme.shadow };
+
+
+    @media (max-width: 768px) {
+        height: 150px;
+        width: 30px;
+        
+    }             
 `
- 
+
 export const ReachMe = styled.div`
     margin-top: 50px;
     text-align: center;
@@ -37,12 +44,12 @@ export const LeftSide = styled.div`
 
 export const SocialMedia = styled.div`
     margin-top: 10px;
-` 
+`
 
 export const LinkIcon = styled(Icon)`
     border-radius: 50%;
     transition: all 0.2s ease-in-out;
-    
+
     &:hover{
         transform: scale(1.3);
         border: 2px solid ${primaryColors[200]};
@@ -56,17 +63,24 @@ export const ProfileWrapper = styled.div`
     border-radius: 0px 0 200px 0px;
     background-color: ${ props => props.theme.cardColor };
 
-    
+    @media (max-width: 768px) {
+        height: 350px;
+    }
+
 `
 
 export const ProfileImg = styled.img`
     height: 500px;
     border-radius: 0px 0 200px 0px;
     box-shadow:  20px 20px 60px ${ props => props.theme.shadow },
-                0px 0px 0px ${ props => props.theme.shadow }; 
+                0px 0px 0px ${ props => props.theme.shadow };
+
+    @media (max-width: 768px) {
+        height: 350px;
+    }
 `
 
-export const ScrollArrowWrapper = styled.div` 
+export const ScrollArrowWrapper = styled.div`
     width: 200px;
     height: 100px;
     position: absolute;
@@ -74,19 +88,19 @@ export const ScrollArrowWrapper = styled.div`
     display: grid;
     place-items: center;
     animation: bounce 1.5s infinite;
-    
+
     @keyframes bounce {
        from{
-        bottom: -50px; 
-       } 
+        bottom: -50px;
+       }
        30%{
-        bottom: -30px 
+        bottom: -30px
        }
        70%{
         bottom: -40px
        }
        to{
-        bottom: -20px; 
+        bottom: -20px;
        }
     }
 `
@@ -95,21 +109,20 @@ export const ScrollArrow = styled.div`
     height: 15px;
     background-color: ${ primaryColors[100] };
     transform: rotate(-50deg);
-    
 
     &::after{
         content: "";
         width: 5px;
         height: 15px;
-        transform: rotate(95deg);  
+        transform: rotate(95deg);
         background-color: ${ primaryColors[100] };
         position: absolute;
-        bottom: -5px;  
+        bottom: -5px;
         left: 5px;
     }
 
-    
-` 
+
+`
 export const SecondPage = styled.div`
     padding-top: 100px;
 `

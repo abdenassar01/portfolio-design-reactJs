@@ -10,13 +10,15 @@ import Contact from "./components/contact/Contact";
 import Error from "./components/error/Error";
 import { dark, light } from "./utils";
 import { ThemeProvider } from "styled-components";
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
     
 const App = () => {
  
     const [ theme, setTheme ] = useState("light")
-
-    const ToggleTheme = () => {
+	
+	useEffect(() => {alert("This website is under maintenance Now")}, [])
+    
+	const ToggleTheme = () => {
         theme === "light" ? setTheme("dark") : setTheme("light");
     }
 
