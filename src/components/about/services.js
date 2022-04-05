@@ -14,7 +14,7 @@ export const services = [
         id: 2,
         icon: cleanCode,
         title: "Clean Code",
-        text: "I Create a clean code that is easy to read and mintaneble 🧹."
+        text: "I Create a clean code that is easy to read and mintan 🧹."
     },
     {
         id: 3,

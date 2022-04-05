@@ -5,6 +5,7 @@ import { Icon, primaryColors } from '../../utils';
 export const FistPage = styled.div`
     Display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     align-items: center;
     position: relative;
 `
@@ -13,21 +14,21 @@ export const ParagraphWrapper = styled.div`
     background-color: ${ props => props.theme.cardColor };
     border-radius: 20px;
     height: 200px;
-    width: 500px;
+    min-width: 300px;
+    max-width: 500px;
     Display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 0px 20px;
+    padding: 20px 20px;
     box-shadow:  20px 20px 60px ${ props => props.theme.shadow },
                 -20px -20px 60px ${ props => props.theme.shadow };
 
-
     @media (max-width: 768px) {
         height: 150px;
-        width: 30px;
-        
-    }             
+        border-radius: 10px;
+        margin: 20px;
+    }
 `
 
 export const ReachMe = styled.div`
@@ -65,6 +66,7 @@ export const ProfileWrapper = styled.div`
 
     @media (max-width: 768px) {
         height: 350px;
+        border-radius: 10px;
     }
 
 `
@@ -77,6 +79,8 @@ export const ProfileImg = styled.img`
 
     @media (max-width: 768px) {
         height: 350px;
+        border-radius: 10px;
+
     }
 `
 
@@ -88,6 +92,7 @@ export const ScrollArrowWrapper = styled.div`
     display: grid;
     place-items: center;
     animation: bounce 1.5s infinite;
+
 
     @keyframes bounce {
        from{
@@ -141,6 +146,7 @@ export const Items = styled.ul`
     justify-content: space-evenly;
     padding: 100px 0;
     flex-wrap: wrap;
+    gap: 45px;
 `
 
 export const ServiceCard = styled.li`
