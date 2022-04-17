@@ -2,9 +2,10 @@ import styled from "styled-components";
 import { SecondaryButton, primaryColors } from "../../utils";
 
 export const Modal = styled.div`
-    height: 90vh;
     position: relative;
+    top: 20px;
     display: flex;
+    flex-wrap: wrap;
 `
 
 export const Wrapper = styled.div`
@@ -22,7 +23,8 @@ export const Wrapper = styled.div`
     top: 7%;
     padding: 50px;
     right: 5%;
-    min-height: 85%;
+    min-height: fit-content;
+    object-fit: contain;
 `
 
 export const Form = styled.form`
@@ -84,11 +86,14 @@ export const Textarea = styled.textarea`
 export const Label  = styled.label`
     font-size: 12px;
     color: ${primaryColors[100]};
-    /* display: none; */
-
 `
 
 export const StyledSecondaryButton = styled(SecondaryButton)`
-
     margin-bottom: 50px;
+`
+
+export const Illustration = styled.img`
+    height: 500px;
+    margin-top: 40px;
+    margin-left: 40px;
 `

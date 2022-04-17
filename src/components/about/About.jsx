@@ -59,7 +59,7 @@ const About = () => {
                         { services.map(service =>
                                 <ServiceCard key={service.id}>
                                     <ServiceIcon width="50px" src={service.icon} />
-                                    <H3 bold color={primaryColors[100]}>{service.title}</H3><br />
+                                    <H3 bold >{service.title}</H3><br />
                                     <Paragraph>{service.text}</Paragraph>
                                 </ServiceCard>
                             )}    
