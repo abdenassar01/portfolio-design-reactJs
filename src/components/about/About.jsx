@@ -1,6 +1,6 @@
-import { HelperText, H3, H1, Paragraph, primaryColors } from '../../utils';
+import {  H3, H1, Paragraph, primaryColors, HelperText } from '../../utils';
 import {    
-    FistPage, ParagraphWrapper , 
+    FistPage, ParagraphWrapper, 
     ReachMe, LeftSide, SecondPage, LinkIcon,
     ProfileImg, SocialMedia, ServecesWrapper, ScrollArrow,
     Items, ServiceCard, ServiceIcon, ProfileWrapper, ScrollArrowWrapper,
@@ -59,7 +59,7 @@ const About = () => {
                         { services.map(service =>
                                 <ServiceCard key={service.id}>
                                     <ServiceIcon width="50px" src={service.icon} />
-                                    <H3 bold color={primaryColors[100]}>{service.title}</H3><br />
+                                    <H3 bold >{service.title}</H3><br />
                                     <Paragraph>{service.text}</Paragraph>
                                 </ServiceCard>
                             )}    

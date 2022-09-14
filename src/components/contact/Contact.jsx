@@ -1,6 +1,7 @@
-import { Modal, Wrapper,Item, Form, Input, Label, Textarea  } from "./StyledComponants";
+import { Modal, Wrapper,Item, Form, Input, Label, Textarea , Illustration } from "./StyledComponants";
 import {  primaryColors, SecondaryButton } from "../../utils";
 import { useState } from "react";
+import illustration from '../../assets/illistrations/email.png'
 
 
 const Contact = () => {
@@ -46,6 +47,7 @@ const Contact = () => {
                         </SecondaryButton>     
                 </Form>
            </Wrapper>
+           <Illustration src={illustration} />
         </Modal>
     )
 }

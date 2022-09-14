@@ -2,8 +2,9 @@ import styled from "styled-components";
 import { neutral } from '../../utils';
 
 export const IdeBanner = styled.div`
-    height: 3vh;
+    height: 30px;
     padding-top: 5px;
+    padding-bottom: 5px;
     position: fixed;
     bottom: 0;
     width: 100%;
